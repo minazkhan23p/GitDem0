@@ -1,0 +1,37 @@
+package Selenium;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+
+public class javaScriptExecutor {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver","C:\\Minaz\\AllSoftware\\chromedriver\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.rahulshettyacademy.com/AutomationPractice/");
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,500)");
+		Thread.sleep(3000);
+		js.executeScript("document.querySelector('.tableFixHead').scrollTop=5000");
+		Thread.sleep(3000);
+		List<WebElement> amts  = driver.findElements(By.cssSelector(".tableFixHead tr td:nth-child(4)"));
+		int Fvalue =0;
+		for(WebElement amt:amts) {
+			Fvalue = Fvalue+Integer.parseInt(amt.getText());
+		}
+		System.out.println(Fvalue);
+		int ActualFvalue = Integer.parseInt(driver.findElement(By.cssSelector("div.totalAmount")).getText().split(":")[1].trim());
+		Assert.assertEquals(Fvalue, ActualFvalue);
+		
+
+	}
+
+}

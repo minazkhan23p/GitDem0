@@ -1,0 +1,29 @@
+package Selenium;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class calender {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver","C:\\Minaz\\AllSoftware\\chromedriver\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.makemytrip.com/flights/?gclid=EAIaIQobChMI5re0pYqy-wIVTB0rCh2ZYAVZEAAYASAAEgI_vfD_BwE&cmp=SEM|D|DF|G|Brand|B_M_Makemytrip_Search_Exact|Brand_MMT_Exact|Responsive|544716039990&s_kwcid=AL!1631!3!544716039990!e!!g!!mmt&ef_id=EAIaIQobChMI5re0pYqy-wIVTB0rCh2ZYAVZEAAYASAAEgI_vfD_BwE:G:s");
+		driver.findElement(By.xpath("//div[@class='fsw_inputBox dates inactiveWidget ']//*[contains(text(),'DEPARTURE')]")).click();
+		List<WebElement> dates = driver.findElements(By.cssSelector("div.dateInnerCell p"));
+		for(int i=0;i<dates.size();i++) {
+		if(dates.get(i).getText().equalsIgnoreCase("25")) {
+			dates.get(i).click();
+			break;
+		
+	}
+
+}
+	}
+}
