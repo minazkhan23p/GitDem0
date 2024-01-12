@@ -12,7 +12,7 @@ public class version {
 		driver.get("https://rahulshettyacademy.com/angularpractice/");
 		WebElement nameEditBox =driver.findElement(By.cssSelector("[name='name']"));
 
-		System.out.println(driver.findElement(withTagName("label").above(nameEditBox)).getText());
+		System.out.println(driver.findElement(withTagNbbame("label").above(nameEditBox)).getText());
 
 		WebElement dateofBirth= driver.findElement(By.cssSelector("[for='dateofBirth']"));
 

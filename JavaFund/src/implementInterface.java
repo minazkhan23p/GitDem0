@@ -1,11 +1,13 @@
 
 public class implementInterface implements Central {
+	//public class implementInterface implements Central,continetSpecific Rule { to implement two interface 
+
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		implementInterface i= new implementInterface();
-		//or Central i= new implementInterface();
+		//or Central i= new implementInterface();//to get only the methods which we implemented of the interface 
 		i.RedStop();
 		i.Greengo();
 		i.YellowWait();

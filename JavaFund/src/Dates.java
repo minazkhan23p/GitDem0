@@ -4,8 +4,11 @@ import java.util.Date;
 public class Dates {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub\
 Date d= new Date();
+//current date 
+System.out.println(d.toString());
+
 SimpleDateFormat sdf= new SimpleDateFormat("MM/d/YYYY HH:mm:ss");
 System.out.println(sdf.format(d));
 

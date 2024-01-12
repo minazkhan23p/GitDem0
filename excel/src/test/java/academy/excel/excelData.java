@@ -50,6 +50,7 @@ public class excelData {
 							else {
 								String Ncv=NumberToTextConverter.toText(cv.getNumericCellValue());
 								ExcelData.add(Ncv);
+								Integer
 							}
 							
 						}

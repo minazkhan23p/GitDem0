@@ -4,6 +4,7 @@ public class child extends ParentAbstract {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		child c= new child();
+
 		c.colour();
 		c.engine();
 		c.safety();

@@ -1,5 +1,5 @@
 
-public class Superchild extends Superparent {
+public class Superchild extends iDOntHaveBody {
 	String name="min";
 	
 	public  Superchild(){

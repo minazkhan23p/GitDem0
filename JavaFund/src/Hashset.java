@@ -5,6 +5,8 @@ public class Hashset {
 
 public static void main(String[] args) {
 //		// TODO Auto-generated method stub
+	//it doesnot accept duplkicate values like list
+	//stored in random order 	
 //	
 //		HashSet<String> hs= new HashSet<String>();
 //		hs.add("minaz");

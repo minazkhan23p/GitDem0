@@ -1,0 +1,31 @@
+
+public class doWhile {
+
+	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//		int j=10;
+//do{
+//	//System.out.println(j);
+//	j++;
+//	System.out.println(j);
+//}
+//while(j<20);
+		
+		int a =1;
+		for (int i=1;i<5;i++)
+		{
+			for(int j=i;j<=5-i;j++) {
+				System.out.print(a);
+				a++;
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+
+1 2 3 4
+5 6 7
+8 9
+10

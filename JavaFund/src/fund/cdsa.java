@@ -2,7 +2,7 @@ package fund;
 
 import java.util.ArrayList;
 
-public class cdsa {
+public class cdsa  {
 	public static void main(String[] args) {
 		String name="mi";
 	

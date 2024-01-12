@@ -30,6 +30,22 @@ public class hashmap {
 			System.out.println(mp.getKey());
 			System.out.println(mp.getValue());
 		}
-}
+
+
+
+
+
+
+    // Create a HashMap object called capitalCities
+    HashMap<String, String> capitalCities = new HashMap<String, String>();
+
+    // Add keys and values (Country, City)
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    System.out.println(capitalCities);
+    
+  }
 
 }

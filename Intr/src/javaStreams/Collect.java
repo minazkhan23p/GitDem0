@@ -1,6 +1,7 @@
 package javaStreams;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
@@ -17,6 +18,8 @@ public class Collect {
 		list.add("dev");
 		list.add("syc");
 		list.add("adam");
+		//Collections.sort(list)
+		//Collections.sort(list,Collections.reverseOrder());
 		List<String> a =list.stream().filter(s->s.length()>3).map(s->s.toUpperCase()).collect(Collectors.toList());
 		//TO GET FIRST ELEMT 
 		System.out.println(a.get(0));

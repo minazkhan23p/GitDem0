@@ -1,5 +1,5 @@
 
- final class Finalparent {//final class cannot be inherited but object can be created 
+ public class Finalparent {//final class cannot be inherited but object can be created 
 
 final int i =4;
 
